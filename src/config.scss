@@ -1,0 +1,27 @@
+// Debug flags
+
+$use-helper-mediaqueries: true;
+
+
+/*
+  Responsive settings
+*/
+$breakpoints: (
+  extraSmall : 30em, // > 480px,
+  small      : 48em, // > 768px,
+  medium     : 60em, // > 960px,
+  large      : 80em, // > 1280px,
+  extraLarge : 100em // > 1600px
+);
+
+/*
+  Screen densities.
+  You don't need to change this values.
+*/
+$densities: (
+  1x  : '96dpi',
+  15x : '144dpi',
+  2x  : '192dpi',
+  3x  : '288dpi',
+  4x  : '384dpi'
+);
