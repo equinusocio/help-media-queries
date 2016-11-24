@@ -21,7 +21,7 @@ With this tool you can handle your responsive project without stress. You will b
 ## How?
 Just import the `help-media-queries.scss` file from `node_modules` inside your scss project, then compile.
 ```scss
-@import 'node_modules/src/help-media-queries.scss';
+@import 'node_modules/help-media-queries/src/help-media-queries.scss';
 ```
 By default **HMQ** is active, so make sure to disable it by setting `$hmq-enabled` to `false`, or by removing the ```@import``` when your are on production!
 
