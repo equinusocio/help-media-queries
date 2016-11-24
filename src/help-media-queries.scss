@@ -137,14 +137,14 @@ $densities: (
             }
 
             @media ( min-width: $size ) {
-              content: "Breakpoint:   #{ $size-name } #{ $size } \a Density:         #{ $density } (min)" !important;
+              content: "Breakpoint:   #{ $size-name } (#{ $size }) \a Density:         #{ $density } (min)" !important;
 
               @media ( orientation: portrait ) {
-                content: "Breakpoint:   #{ $size-name } #{ $size } \a Density:         #{ $density } (min) \a Orientation:   Portrait" !important;
+                content: "Breakpoint:   #{ $size-name } (#{ $size }) \a Density:         #{ $density } (min) \a Orientation:   Portrait" !important;
               }
 
               @media ( orientation: landscape ) {
-                content: "Breakpoint:   #{ $size-name } #{ $size } \a Density:         #{ $density } (min) \a Orientation:   Landscape" !important;
+                content: "Breakpoint:   #{ $size-name } (#{ $size }) \a Density:         #{ $density } (min) \a Orientation:   Landscape" !important;
               }
             }
           }
