@@ -1,5 +1,6 @@
 /*
   Debug flags
+  NOTE: Remember to disable this utility when you are on production
 */
 $hmq-enabled: true;
 $hmq-enable-random-color: false;
@@ -7,7 +8,7 @@ $hmq-enable-random-color: false;
 
 /*
   Responsive settings
-  I suggest you use this breakpoints for your media queries.
+  I suggest you to use this breakpoints for your media queries.
 */
 $breakpoints: (
   extraSmall : 30em, // > 480px,
@@ -33,9 +34,36 @@ $densities: (
 
 
 
-// ***************************************************
+// ↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧↧
 // ⛔️ DON'T EDIT UNDER THIS LINE ⛔️
-// ***************************************************
+// ↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥↥
+
+/*
+  Get breakpoint argument name from te $breakpoints map
+  and return media query with his value.
+  NOTE This require a $breakpoints map.
+  Ex: @media screen and (break(BREAKPOINT_NAME)) {...}
+*/
+@function break($key) {
+  @if map-has-key($breakpoints, $key) {
+    @return 'min-width: #{ map-get( $breakpoints, $key ) }';
+  }
+}
+
+
+/*
+  Get density argument name from the $densities map
+  and return the media query with his value.
+  NOTE This require a $densities map.
+  Ex: @media screen and (density(2x)) {...}
+*/
+@function density($key) {
+  @if map-has-key($densities, $key) {
+    @return 'min-resolution: #{ map-get( $densities, $key ) }';
+  }
+}
+
+// This code show the flag on page, the flag will show the current active breakpoints
 
 @if $hmq-enabled == true {
 
@@ -82,13 +110,16 @@ $densities: (
     }
 
     /*
-      Extract each density value from $densities
+      Extract each $density value from $densities
     */
     @each $density in $densities {
 
       $density: nth( $density, 2 );
       $dpi: unquote( 'min-resolution: #{ $density }' );
 
+      /*
+        Extract each key and his value form the $breakpoints map
+      */
       @for $i from 1 through length( $breakpoints ) {
         $size-name: nth( nth( $breakpoints, $i ), 1 );
         $size: nth( nth( $breakpoints, $i ), 2 );
