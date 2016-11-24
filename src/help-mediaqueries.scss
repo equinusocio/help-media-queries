@@ -1,16 +1,5 @@
 @import 'config';
 
-/*
-  Functions
-*/
-@function strip-unit( $number ) {
-  @if type-of( $number ) == 'number' and not unitless( $number ) {
-    @return $number / ( $number * 0 + 1 );
-  }
-
-  @return $number;
-}
-
 @if $use-helper-mediaqueries == true {
 
   :root {
@@ -81,14 +70,14 @@
             }
 
             @media ( min-width: $size ) {
-              content: "Breakpoint:   #{ $size-name } - #{ $size } ( #{ $size-to-px } ) \a Density:   #{ $density } ( min )" !important;
+              content: "Breakpoint:   #{ $size-name } #{ $size } ( #{ $size-to-px } ) \a Density:   #{ $density } ( min )" !important;
 
               @media ( orientation: portrait ) {
-                content: "Breakpoint:   #{ $size-name } - #{ $size } ( #{ $size-to-px } ) \a Density:   #{ $density } ( min ) \a Orientation:   Portrait" !important;
+                content: "Breakpoint:   #{ $size-name } #{ $size } ( #{ $size-to-px } ) \a Density:   #{ $density } ( min ) \a Orientation:   Portrait" !important;
               }
 
               @media ( orientation: landscape ) {
-                content: "Breakpoint:   #{ $size-name } - #{ $size } ( #{ $size-to-px } ) \a Density:   #{ $density } ( min ) \a Orientation:   Landscape" !important;
+                content: "Breakpoint:   #{ $size-name } #{ $size } ( #{ $size-to-px } ) \a Density:   #{ $density } ( min ) \a Orientation:   Landscape" !important;
               }
             }
           }
