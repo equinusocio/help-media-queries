@@ -1,8 +1,7 @@
 /*
-  Debug flags
-  NOTE: Remember to disable this utility when you are on production
+  NOTE: Remember to disable the tooltip when you are on production
 */
-$hmq-enabled: true;
+$hmq-enable-tooltip: true;
 $hmq-enable-random-color: false;
 
 
@@ -65,7 +64,7 @@ $densities: (
 
 // This code show the flag on page, the flag will show the current active breakpoints
 
-@if $hmq-enabled == true {
+@if $hmq-enable-tooltip == true {
 
   :root {
 

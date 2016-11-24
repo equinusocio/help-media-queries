@@ -23,7 +23,7 @@ Just import the `help-media-queries.scss` file from `node_modules` inside your s
 ```scss
 @import 'node_modules/help-media-queries/src/help-media-queries.scss';
 ```
-By default **HMQ** is active, so make sure to disable it by setting `$hmq-enabled` to `false`, or by removing the ```@import``` when your are on production!
+By default **HMQ** is active, so make sure to disable it by setting `$hmq-enable-tooltip` to `false`, or by removing the ```@import``` when your are on production!
 
 **HMQ** provide two useful SASS function that make your media queries easy to write, `break()` and `density()`
 
@@ -63,8 +63,8 @@ Here some examples:
 You can override this settings in your project.
 
 ```scss
-// Enable or disable HMQ (set false when you are on production!)
-$hmq-enabled: true;
+// Enable or disable the HMQ tooltip (set false when you are on production!)
+$hmq-enable-tooltip: true;
 
 // If true the tooltip text color will be random each breakpoint
 $hmq-enable-random-color: false;
