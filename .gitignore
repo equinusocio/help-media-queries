@@ -1,3 +1,5 @@
 /src/help-media-queries.min.css
 /src/config.min.css
 /demo.html
+
+node_modules/
