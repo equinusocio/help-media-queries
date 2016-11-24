@@ -46,8 +46,10 @@ Here some examples:
 ```scss
 // Enable or disable HMQ (set false when you are on production!)
 $hmq-enabled: true;
+
 // If true the tooltip text color will be random each breakpoint
 $hmq-enable-random-color: false;
+
 // This is the default breakpoints map, useful for a wide usage.
 $breakpoints: (
   extraSmall : 30em,
@@ -56,6 +58,16 @@ $breakpoints: (
   large      : 80em,
   extraLarge : 100em
 );
+
+// Screen densities. You don't need to change this values.
+$densities: (
+  1x  : '96dpi',
+  15x : '144dpi',
+  2x  : '192dpi',
+  3x  : '288dpi',
+  4x  : '384dpi'
+);
+
 ```
 
 ## Support on Beerpay
