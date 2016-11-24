@@ -1,4 +1,62 @@
-<img width="277" alt="Help Media Queries" src="https://cloud.githubusercontent.com/assets/10454741/20606105/25e0da74-b26f-11e6-8a42-687aeb44c301.png">
+<img width="277" alt="Help Media Queries" src="https://cloud.githubusercontent.com/assets/10454741/20606336/8025011c-b270-11e6-988b-e083942e7f78.png">
+
+## What's Help Media Queries?
+With this tool you can handle your responsive project without stress. You will be able to create a set of breakpoints (`min-width` obviously) that allow you to easily manage your layout .. and your components.
+
+**HMQ** (Help Media Queries) offer also an useful tooltip sticked at the bottom of the page that will display your active media query, your screen density and the screen/viewport orientation.
+
+## How?
+Just grab the `help-media-queries.scss` file ad put it inside your sass project, then compile. By default **HMQ** is active, so make sure to **disable it** by setting `$hmq-enabled` to `false` **when your are on production**!
+
+**HMQ** provide two useful SASS function that make your media queries easy to write, `break()` and `density()`
+
+Here some examples:
+
+**With break(..)**
+```scss
+.Header {
+  background-color: #FF00FF;
+
+  // Green background from 960px
+  @media screen and (break(medium)) {
+    background-color: #00FF00;
+  }
+}
+
+```
+
+**With break(..) and density(..) **
+```scss
+.Header {
+  background-color: #FF00FF;
+
+  // Green background from 960px width and retina display
+  @media screen and (break(medium)) and (density(2x)) {
+    background-color: #00FF00;
+  }
+}
+
+```
+
+
+
+
+## Settings
+
+```scss
+// Enable or disable HMQ (set false when you are on production!)
+$hmq-enabled: true;
+// If true the tooltip text color will be random each breakpoint
+$hmq-enable-random-color: false;
+// This is the default breakpoints map, useful for a wide usage.
+$breakpoints: (
+  extraSmall : 30em,
+  small      : 48em,
+  medium     : 60em,
+  large      : 80em,
+  extraLarge : 100em
+);
+```
 
 ## Support on Beerpay
 Hey dude! Help me out for a couple of :beers:!
