@@ -1,6 +1,17 @@
 <img width="277" alt="Help Media Queries" src="https://cloud.githubusercontent.com/assets/10454741/20606336/8025011c-b270-11e6-988b-e083942e7f78.png">
 
-## What's Help Media Queries?
+<img width="24px" alt="Google Chrome" src="https://cdn.rawgit.com/alrra/browser-logos/master/chrome/chrome_48x48.png">
+<img width="24px" alt="Firefox" src="https://cdn.rawgit.com/alrra/browser-logos/master/firefox/firefox_48x48.png">
+<img width="24px" alt="Safari" src="https://cdn.rawgit.com/alrra/browser-logos/master/safari/safari_48x48.png">
+<img width="24px" alt="Safari" src="https://cdn.rawgit.com/alrra/browser-logos/master/edge/edge_48x48.png" title="💩">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[![Beerpay](https://beerpay.io/equinusocio/help-media-queries/badge.svg?style=flat-square)](https://beerpay.io/equinusocio/help-media-queries)
+[![GitHub issues](https://img.shields.io/github/issues/equinusocio/help-media-queries.svg?colorB=80d4cd&style=flat-square)](https://github.com/equinusocio/help-media-queries/issues)
+[![GitHub stars](https://img.shields.io/github/stars/equinusocio/help-media-queries.svg?colorB=80d4cd&style=flat-square)](https://github.com/equinusocio/hhelp-media-queries/stargazers)
+
+
+
+## What's "Help Media Queries"?
+
 With this tool you can handle your responsive project without stress. You will be able to create a set of breakpoints (`min-width` obviously) that allow you to easily manage your layout .. and your components.
 
 **HMQ** (Help Media Queries) offer also an useful tooltip sticked at the bottom of the page that will display your active media query, your screen density and the screen/viewport orientation.
