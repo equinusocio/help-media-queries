@@ -16,7 +16,7 @@ $breakpoints: (
   medium     : 60em,
   large      : 80em,
   extraLarge : 100em
-);
+) !default;
 
 
 /*
@@ -29,7 +29,7 @@ $densities: (
   2x  : '192dpi',
   3x  : '288dpi',
   4x  : '384dpi'
-);
+) !default;
 
 
 
