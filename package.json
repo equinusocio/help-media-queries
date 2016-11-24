@@ -2,7 +2,7 @@
   "name": "help-media-queries",
   "version": "1.0.0",
   "description": "A SASS tool that help you to easily recognize your active media query and display additional screen info.",
-  "main": "help-media-queries.scss",
+  "main": "src/help-media-queries.scss",
   "keywords": [
     "css",
     "sass",
