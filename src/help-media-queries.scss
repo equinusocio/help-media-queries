@@ -11,11 +11,11 @@ $hmq-enable-random-color: false;
   I suggest you to use this breakpoints for your media queries.
 */
 $breakpoints: (
-  extraSmall : 30em, // > 480px,
-  small      : 48em, // > 768px,
-  medium     : 60em, // > 960px,
-  large      : 80em, // > 1280px,
-  extraLarge : 100em // > 1600px
+  extraSmall : 30em,
+  small      : 48em,
+  medium     : 60em,
+  large      : 80em,
+  extraLarge : 100em
 );
 
 
