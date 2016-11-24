@@ -1,6 +1,46 @@
 @import 'config';
 
-@if $use-helper-mediaqueries == true {
+/*
+  Debug flags
+*/
+$hmq-enabled: true;
+$hmq-base-font-size: 16px; // Browser default
+$hmq-enable-random-color: false;
+
+
+/*
+  Responsive settings
+  I suggest you use this breakpoints for your media queries.
+*/
+$breakpoints: (
+  extraSmall : 30em, // > 480px,
+  small      : 48em, // > 768px,
+  medium     : 60em, // > 960px,
+  large      : 80em, // > 1280px,
+  extraLarge : 100em // > 1600px
+);
+
+
+/*
+  Screen densities.
+  You don't need to change this values.
+*/
+$densities: (
+  1x  : '96dpi',
+  15x : '144dpi',
+  2x  : '192dpi',
+  3x  : '288dpi',
+  4x  : '384dpi'
+);
+
+
+
+
+// ***************************************************
+// ⛔️ DON'T EDIT UNDER THIS LINE ⛔️
+// ***************************************************
+
+@if $hmq-enabled == true {
 
   :root {
 
@@ -30,7 +70,7 @@
       /*
       Loop through $breakpoints and generate a random text color if $enable-random-color is TRUE
       */
-      @if $enable-random-color == true {
+      @if $hmq-enable-random-color == true {
         @each $breakpoint in $breakpoints {
           /*
             Extract the $breakpoint value
@@ -55,29 +95,29 @@
       @for $i from 1 through length( $breakpoints ) {
         $size-name: nth( nth( $breakpoints, $i ), 1 );
         $size: nth( nth( $breakpoints, $i ), 2 );
-        $size-to-px: "#{( $size / ( $size * 0 + 1 ) ) * ( $base-font-size / ( $base-font-size * 0 + 1 ) )}px";
+        $size-to-px: "#{($size / ( $size * 0 + 1 )) * ($hmq-base-font-size / ( $hmq-base-font-size * 0 + 1 ))}px";
 
         &::after {
           @media screen and ( $dpi ) {
             content: 'Density: #{ $density }';
 
             @media ( orientation: portrait ) {
-              content: 'Breakpoint:   None \a Density:   #{ $density } ( min ) \a Orientation:   Portrait';
+              content: 'Breakpoint:   None \a Density:         #{ $density } (min) \a Orientation:   Portrait';
             }
 
             @media ( orientation: landscape ) {
-              content: "Breakpoint:   None \a Density:   #{ $density } \a Orientation:   Landscape";
+              content: "Breakpoint:   None \a Density:         #{ $density } (min) \a Orientation:   Landscape";
             }
 
             @media ( min-width: $size ) {
-              content: "Breakpoint:   #{ $size-name } #{ $size } ( #{ $size-to-px } ) \a Density:   #{ $density } ( min )" !important;
+              content: "Breakpoint:   #{ $size-name } #{ $size } (#{ $size-to-px } >) \a Density:         #{ $density } (min)" !important;
 
               @media ( orientation: portrait ) {
-                content: "Breakpoint:   #{ $size-name } #{ $size } ( #{ $size-to-px } ) \a Density:   #{ $density } ( min ) \a Orientation:   Portrait" !important;
+                content: "Breakpoint:   #{ $size-name } #{ $size } (#{ $size-to-px } >) \a Density:         #{ $density } (min) \a Orientation:   Portrait" !important;
               }
 
               @media ( orientation: landscape ) {
-                content: "Breakpoint:   #{ $size-name } #{ $size } ( #{ $size-to-px } ) \a Density:   #{ $density } ( min ) \a Orientation:   Landscape" !important;
+                content: "Breakpoint:   #{ $size-name } #{ $size } (#{ $size-to-px } >) \a Density:         #{ $density } (min) \a Orientation:   Landscape" !important;
               }
             }
           }

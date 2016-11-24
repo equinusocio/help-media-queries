@@ -175,7 +175,7 @@ linters:
     allow_single_line_padding: true
 
   SpaceBetweenParens:
-    enabled: true
+    enabled: false
     spaces: 1
 
   StringQuotes:
