@@ -8,7 +8,7 @@ With this tool you can handle your responsive project without stress. You will b
 <p align="center"><img width="586" alt="Help media Queries Tooltip" src="https://cloud.githubusercontent.com/assets/10454741/20607562/d382febe-b279-11e6-804e-0faa21584511.png"></p>
 
 ## How?
-Just grab the `help-media-queries.scss` file ad put it inside your sass project, then compile. By default **HMQ** is active, so make sure to **disable it** by setting `$hmq-enabled` to `false` **when your are on production**!
+Just grab the `help-media-queries.scss` file and put it inside your sass project, then compile. By default **HMQ** is active, so make sure to **disable it** by setting `$hmq-enabled` to `false` **when your are on production**!
 
 **HMQ** provide two useful SASS function that make your media queries easy to write, `break()` and `density()`
 
