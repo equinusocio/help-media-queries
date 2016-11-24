@@ -1,7 +1,10 @@
-// Debug flags
-
+// !compileOnSave
+/*
+  Debug flags
+*/
+$base-font-size: 16px; // Browser default
 $use-helper-mediaqueries: true;
-
+$enable-random-color: false;
 
 /*
   Responsive settings
@@ -13,6 +16,7 @@ $breakpoints: (
   large      : 80em, // > 1280px,
   extraLarge : 100em // > 1600px
 );
+
 
 /*
   Screen densities.

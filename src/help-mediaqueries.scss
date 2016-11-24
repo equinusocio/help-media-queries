@@ -1,6 +1,17 @@
 @import 'config';
 
-@if $use-helper-mediaqueries {
+/*
+  Functions
+*/
+@function strip-unit( $number ) {
+  @if type-of( $number ) == 'number' and not unitless( $number ) {
+    @return $number / ( $number * 0 + 1 );
+  }
+
+  @return $number;
+}
+
+@if $use-helper-mediaqueries == true {
 
   :root {
 
@@ -10,36 +21,38 @@
       cursor: default;
       user-select: none;
       z-index: 999999;
-      bottom: 20px;
-      right: 20px;
+      bottom: 16px;
+      right: 16px;
       font-weight: bold;
-      font-size: 12px;
-      padding: 7px 0;
-      text-align: center;
+      font-size: 11px;
+      text-align: left;
       display: inline-block;
+      line-height: 1.8;
       box-sizing: border-box;
-      padding: 15px 20px;
-      border-radius: 2px;
-      text-transform: uppercase;
+      padding: 16px 24px;
+      border-radius: 4px;
+      white-space: pre-wrap;
+      text-transform: capitalize;
       transition: all 250ms;
       background-color: #FFF;
       box-shadow: 0 10px 30px rgba( #000, 0.2 );
       color: #212121;
 
       /*
-        Loop through $breakpoints and generate a random text color
+      Loop through $breakpoints and generate a random text color if $enable-random-color is TRUE
       */
-      @each $breakpoint in $breakpoints {
-        /*
-          Extract the $breakpoint value
-        */
-        $breakpoint: nth( $breakpoint, 2 );
+      @if $enable-random-color == true {
+        @each $breakpoint in $breakpoints {
+          /*
+            Extract the $breakpoint value
+          */
+          $breakpoint: nth( $breakpoint, 2 );
 
-        @media screen and ( min-width: $breakpoint ) {
-          color: hsl( random( 361 ) - 250, 50%, 50% );
+          @media screen and ( min-width: $breakpoint ) {
+            color: hsl( random( 361 ) - 250, 50%, 50% );
+          }
         }
       }
-
     }
 
     /*
@@ -48,33 +61,34 @@
     @each $density in $densities {
 
       $density: nth( $density, 2 );
-      $dpi: unquote( "min-resolution: #{ $density }" );
+      $dpi: unquote( 'min-resolution: #{ $density }' );
 
       @for $i from 1 through length( $breakpoints ) {
         $size-name: nth( nth( $breakpoints, $i ), 1 );
         $size: nth( nth( $breakpoints, $i ), 2 );
+        $size-to-px: "#{( $size / ( $size * 0 + 1 ) ) * ( $base-font-size / ( $base-font-size * 0 + 1 ) )}px";
 
         &::after {
           @media screen and ( $dpi ) {
-            content: "#{ $density } ";
+            content: 'Density: #{ $density }';
 
             @media ( orientation: portrait ) {
-              content: "#{ $density }+ - PORTRAIT";
+              content: 'Breakpoint:   None \a Density:   #{ $density } ( min ) \a Orientation:   Portrait';
             }
 
             @media ( orientation: landscape ) {
-              content: "#{ $density } - LANDSCAPE";
+              content: "Breakpoint:   None \a Density:   #{ $density } \a Orientation:   Landscape";
             }
 
             @media ( min-width: $size ) {
-              content: "#{ $size-name } - #{ $density }+" !important;
+              content: "Breakpoint:   #{ $size-name } - #{ $size } ( #{ $size-to-px } ) \a Density:   #{ $density } ( min )" !important;
 
               @media ( orientation: portrait ) {
-                content: "#{ $size-name } - #{ $density }+ - PORTRAIT" !important;
+                content: "Breakpoint:   #{ $size-name } - #{ $size } ( #{ $size-to-px } ) \a Density:   #{ $density } ( min ) \a Orientation:   Portrait" !important;
               }
 
               @media ( orientation: landscape ) {
-                content: "#{ $size-name } - #{ $density }+ - LANDSCAPE" !important;
+                content: "Breakpoint:   #{ $size-name } - #{ $size } ( #{ $size-to-px } ) \a Density:   #{ $density } ( min ) \a Orientation:   Landscape" !important;
               }
             }
           }
