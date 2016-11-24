@@ -2,7 +2,7 @@
 
 <img width="24px" alt="Google Chrome" src="https://cdn.rawgit.com/alrra/browser-logos/master/chrome/chrome_48x48.png">
 <img width="24px" alt="Firefox" src="https://cdn.rawgit.com/alrra/browser-logos/master/firefox/firefox_48x48.png">
-<img width="24px" alt="Safari" src="https://cdn.rawgit.com/alrra/browser-logos/master/safari/safari_48x48.png">
+<img width="24px" alt="Safari" src="https://cdn.rawgit.com/alrra/browser-logos/master/safari/safari_48x48.png" title="💩💩">
 <img width="24px" alt="Safari" src="https://cdn.rawgit.com/alrra/browser-logos/master/edge/edge_48x48.png" title="💩">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [![Beerpay](https://beerpay.io/equinusocio/help-media-queries/badge.svg?style=flat-square)](https://beerpay.io/equinusocio/help-media-queries)
 [![GitHub issues](https://img.shields.io/github/issues/equinusocio/help-media-queries.svg?colorB=80d4cd&style=flat-square)](https://github.com/equinusocio/help-media-queries/issues)
