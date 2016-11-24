@@ -71,23 +71,22 @@ $densities: (
 
     &::after {
       position: fixed;
-      font-family: -apple-system, BlinkMacSystemFont,"Arial", sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont,'Arial', sans-serif;
       cursor: default;
+      -webkit-user-select: none;
       user-select: none;
+      pointer-events: none;
       z-index: 999999;
       bottom: 16px;
       right: 16px;
       font-weight: bold;
       font-size: 11px;
-      text-align: left;
-      display: inline-block;
       line-height: 1.8;
       box-sizing: border-box;
       padding: 16px 24px;
       border-radius: 4px;
       white-space: pre-wrap;
       text-transform: capitalize;
-      transition: all 250ms;
       background-color: #FFF;
       box-shadow: 0 10px 30px rgba( #000, 0.2 );
       color: #212121;
@@ -133,18 +132,18 @@ $densities: (
             }
 
             @media ( orientation: landscape ) {
-              content: "Breakpoint:   None \a Density:         #{ $density } (min) \a Orientation:   Landscape";
+              content: 'Breakpoint:   None \a Density:         #{ $density } (min) \a Orientation:   Landscape';
             }
 
             @media ( min-width: $size ) {
-              content: "Breakpoint:   #{ $size-name } (#{ $size }) \a Density:         #{ $density } (min)" !important;
+              content: 'Breakpoint:   #{ $size-name } (#{ $size }) \a Density:         #{ $density } (min)' !important;
 
               @media ( orientation: portrait ) {
-                content: "Breakpoint:   #{ $size-name } (#{ $size }) \a Density:         #{ $density } (min) \a Orientation:   Portrait" !important;
+                content: 'Breakpoint:   #{ $size-name } (#{ $size }) \a Density:         #{ $density } (min) \a Orientation:   Portrait' !important;
               }
 
               @media ( orientation: landscape ) {
-                content: "Breakpoint:   #{ $size-name } (#{ $size }) \a Density:         #{ $density } (min) \a Orientation:   Landscape" !important;
+                content: 'Breakpoint:   #{ $size-name } (#{ $size }) \a Density:         #{ $density } (min) \a Orientation:   Landscape' !important;
               }
             }
           }
