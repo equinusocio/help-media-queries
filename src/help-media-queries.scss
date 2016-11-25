@@ -108,12 +108,13 @@ $densities: (
     }
 
     /*
-      Extract each $density value from $densities
+      Extract each $density-value value from $densities
     */
     @each $density in $densities {
 
-      $density: nth( $density, 2 );
-      $dpi: unquote( 'min-resolution: #{ $density }' );
+      $density-name: nth( $density, 1 );
+      $density-value: nth( $density, 2 );
+      $dpi: unquote( 'min-resolution: #{ $density-value }' );
 
       /*
         Extract each key and his value form the $breakpoints map
@@ -124,25 +125,25 @@ $densities: (
 
         &::after {
           @media screen and ( $dpi ) {
-            content: 'Density: #{ $density }';
+            content: 'Density: #{ $density-value }';
 
             @media ( orientation: portrait ) {
-              content: 'Breakpoint:   None \a Density:         #{ $density } (min) \a Orientation:   Portrait';
+              content: 'Breakpoint:   None \a Density:         #{ $density-value } (#{ $density-name }) \a Orientation:   Portrait';
             }
 
             @media ( orientation: landscape ) {
-              content: 'Breakpoint:   None \a Density:         #{ $density } (min) \a Orientation:   Landscape';
+              content: 'Breakpoint:   None \a Density:         #{ $density-value } (#{ $density-name }) \a Orientation:   Landscape';
             }
 
             @media ( min-width: $size ) {
-              content: 'Breakpoint:   #{ $size-name } (#{ $size }) \a Density:         #{ $density } (min)' !important;
+              content: 'Breakpoint:   #{ $size-name } (#{ $size }) \a Density:         #{ $density-value } (#{ $density-name })' !important;
 
               @media ( orientation: portrait ) {
-                content: 'Breakpoint:   #{ $size-name } (#{ $size }) \a Density:         #{ $density } (min) \a Orientation:   Portrait' !important;
+                content: 'Breakpoint:   #{ $size-name } (#{ $size }) \a Density:         #{ $density-value } (#{ $density-name }) \a Orientation:   Portrait' !important;
               }
 
               @media ( orientation: landscape ) {
-                content: 'Breakpoint:   #{ $size-name } (#{ $size }) \a Density:         #{ $density } (min) \a Orientation:   Landscape' !important;
+                content: 'Breakpoint:   #{ $size-name } (#{ $size }) \a Density:         #{ $density-value } (#{ $density-name }) \a Orientation:   Landscape' !important;
               }
             }
           }
