@@ -1,3 +1,13 @@
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/equinusocio/help-media-queries/compare/v1.0.1...v1.1.0) (2016-11-25)
+
+
+### Features
+
+* remove density min label and add density multiplier ([dbb6c73](https://github.com/equinusocio/help-media-queries/commit/dbb6c73))
+
+
+
 <a name="1.0.1"></a>
 ## [1.0.1](https://github.com/equinusocio/help-media-queries/compare/v1.0.0...v1.0.1) (2016-11-24)
 
