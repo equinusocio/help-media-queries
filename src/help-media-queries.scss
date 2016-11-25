@@ -3,6 +3,7 @@
 */
 $hmq-enable-tooltip: true;
 $hmq-enable-random-color: false;
+$hmq-dark-theme: false;
 
 
 /*
@@ -71,9 +72,8 @@ $densities: (
     &::after {
       position: fixed;
       font-family: -apple-system, BlinkMacSystemFont,'Arial', sans-serif;
-      cursor: default;
-      -webkit-user-select: none;
       user-select: none;
+      -webkit-user-select: none;
       pointer-events: none;
       z-index: 999999;
       bottom: 16px;
@@ -86,9 +86,17 @@ $densities: (
       border-radius: 4px;
       white-space: pre-wrap;
       text-transform: capitalize;
-      background-color: #FFF;
       box-shadow: 0 10px 30px rgba( #000, 0.2 );
-      color: #212121;
+      -webkit-backdrop-filter: blur(2px);
+      backdrop-filter: blur(2px);
+
+      @if $hmq-dark-theme == false {
+        background-color: rgba( #FFF, 0.95 );
+        color: #212121;
+      } @else {
+        background-color: rgba( #212121, 0.95 );
+        color: #FFF;
+      }
 
       /*
       Loop through $breakpoints and generate a random text color if $enable-random-color is TRUE
@@ -112,7 +120,6 @@ $densities: (
     */
     @each $density in $densities {
 
-      $density-name: nth( $density, 1 );
       $density-value: nth( $density, 2 );
       $dpi: unquote( 'min-resolution: #{ $density-value }' );
 
