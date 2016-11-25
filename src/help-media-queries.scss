@@ -120,6 +120,7 @@ $densities: (
     */
     @each $density in $densities {
 
+      $density-name: nth( $density, 1 );
       $density-value: nth( $density, 2 );
       $dpi: unquote( 'min-resolution: #{ $density-value }' );
 
