@@ -25,7 +25,7 @@ Just import the `help-media-queries.scss` file from `node_modules` inside your s
 ```
 By default **HMQ** is active, so make sure to disable it by setting `$hmq-enable-tooltip` to `false`, or by removing the ```@import``` when your are on production!
 
-**HMQ** provide two useful SASS function that make your media queries easy to write, `break()` and `density()`
+**HMQ** provide two useful SASS functions that make your media queries easy to write, `break()` and `density()`
 
 Here some examples:
 
