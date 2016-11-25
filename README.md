@@ -2,8 +2,8 @@
 
 <img width="24px" alt="Google Chrome" src="https://cdn.rawgit.com/alrra/browser-logos/master/chrome/chrome_48x48.png">
 <img width="24px" alt="Firefox" src="https://cdn.rawgit.com/alrra/browser-logos/master/firefox/firefox_48x48.png">
-<img width="24px" alt="Safari" src="https://cdn.rawgit.com/alrra/browser-logos/master/safari/safari_48x48.png" title="💩💩">
 <img width="24px" alt="Safari" src="https://cdn.rawgit.com/alrra/browser-logos/master/edge/edge_48x48.png" title="💩">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img width="24px" style="opacity: 0.2;" alt="Safari" src="https://cdn.rawgit.com/alrra/browser-logos/master/safari/safari_48x48.png" title="💩💩">
 <a href="https://beerpay.io/equinusocio/help-media-queries"><img alt="Google Chrome" src="https://beerpay.io/equinusocio/help-media-queries/badge.svg?style=flat-square"></a>
 <a href="https://github.com/equinusocio/help-media-queries/issues"><img alt="Google Chrome" src="https://img.shields.io/github/issues/equinusocio/help-media-queries.svg?colorB=80d4cd&style=flat-square"></a>
 <a href="https://github.com/equinusocio/hhelp-media-queries/stargazers"><img alt="Google Chrome" src="https://img.shields.io/github/stars/equinusocio/help-media-queries.svg?colorB=80d4cd&style=flat-square"></a>
@@ -68,6 +68,9 @@ $hmq-enable-tooltip: true;
 
 // If true the tooltip text color will be random each breakpoint
 $hmq-enable-random-color: false;
+
+// Set a dark theme for the tooltip (useful on white background)
+$hmq-dark-theme: false;
 
 // This is the default breakpoints map, useful for a wide usage.
 $breakpoints: (
