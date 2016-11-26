@@ -22,6 +22,8 @@ Just import the `help-media-queries.scss` file from `node_modules` inside your s
 ```scss
 @import 'node_modules/help-media-queries/src/help-media-queries.scss';
 ```
+**NOTE:** If you use [Webpack](https://webpack.js.org/) you can easily import this dependency from `node_modules` and build.
+
 By default **HMQ** is active, so make sure to disable it by setting `$hmq-enable-tooltip` to `false`, or by removing the ```@import``` when your are on production!
 
 **HMQ** provide two useful SASS functions that make your media queries easy to write, `break()` and `density()`
