@@ -1190,9 +1190,9 @@ eslint-plugin-standard@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-standard/-/eslint-plugin-standard-2.0.1.tgz#3589699ff9c917f2c25f76a916687f641c369ff3"
 
-eslint@^3.8.1:
-  version "3.10.2"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-3.10.2.tgz#c9a10e8bf6e9d65651204778c503341f1eac3ce7"
+eslint@^3.11.0:
+  version "3.11.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-3.11.0.tgz#41d34f8b3e69949beee5c097ff4e75ad13ba2d00"
   dependencies:
     babel-code-frame "^6.16.0"
     chalk "^1.1.3"
@@ -2413,8 +2413,8 @@ meow@^3.3.0:
     trim-newlines "^1.0.0"
 
 merge-stream@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/merge-stream/-/merge-stream-1.0.0.tgz#9cfd156fef35421e2b5403ce11dc6eb1962b026e"
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/merge-stream/-/merge-stream-1.0.1.tgz#4041202d508a342ba00174008df0c251b8c135e1"
   dependencies:
     readable-stream "^2.0.1"
 
