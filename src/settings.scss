@@ -1,0 +1,33 @@
+// !compileOnSave
+/*
+  NOTE: Remember to disable the tooltip when you are on production
+*/
+$hmq-enable-tooltip: true;
+$hmq-enable-random-color: false;
+$hmq-dark-theme: false;
+
+
+/*
+  Responsive settings
+  I suggest you to use this breakpoints for your media queries.
+*/
+$breakpoints: (
+  extraSmall : 30em,
+  small      : 48em,
+  medium     : 60em,
+  large      : 80em,
+  extraLarge : 100em
+) !default;
+
+
+/*
+  Screen densities.
+  You don't need to change this values.
+*/
+$densities: (
+  1x  : '96dpi',
+  15x : '144dpi',
+  2x  : '192dpi',
+  3x  : '288dpi',
+  4x  : '384dpi'
+) !default;

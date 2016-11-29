@@ -1,0 +1,27 @@
+// !compileOnSave
+@import "settings";
+
+/*
+  Get breakpoint argument name from te $breakpoints map
+  and return media query with his value.
+  NOTE This require a $breakpoints map.
+  Ex: @media screen and (break(BREAKPOINT_NAME)) {...}
+*/
+@function break($key) {
+  @if map-has-key($breakpoints, $key) {
+    @return 'min-width: #{ map-get( $breakpoints, $key ) }';
+  }
+}
+
+
+/*
+  Get density argument name from the $densities map
+  and return the media query with his value.
+  NOTE This require a $densities map.
+  Ex: @media screen and (density(2x)) {...}
+*/
+@function density($key) {
+  @if map-has-key($densities, $key) {
+    @return 'min-resolution: #{ map-get( $densities, $key ) }';
+  }
+}
