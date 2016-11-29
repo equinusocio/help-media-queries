@@ -45,9 +45,9 @@ Here some examples:
 ```
 
 ## How?
-1. Install this tool with `npm install -D help-media-queries`. If you use [Yarn](https://yarnpkg.com/), run `yarn add --dev help-media-queries`
+Install this tool with `npm install -D help-media-queries`. If you use [Yarn](https://yarnpkg.com/), run `yarn add --dev help-media-queries`
 
-**Gulp/Grunt**
+##### Gulp/Grunt
 
 ```scss
 // Import the functions break() and density()
@@ -56,7 +56,7 @@ Here some examples:
 @import 'node_modules/help-media-queries/src/tooltip.scss';
 ```
 
-**Webpack/React**
+##### Webpack/React
 
 Inside your `scss` entry point, import once the tooltip file:
 ```scss
