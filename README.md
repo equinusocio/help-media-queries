@@ -18,6 +18,32 @@ With this tool you can handle your responsive project without stress. You will b
 
 <p align="center"><img width="586" alt="Help media Queries Tooltip" src="https://cloud.githubusercontent.com/assets/10454741/20607562/d382febe-b279-11e6-804e-0faa21584511.png"></p>
 
+**HMQ** provide also two useful SASS functions that make your media queries easy to write, `break()` and `density()`
+
+Here some examples:
+
+**With break(..)**
+```scss
+.Header {
+  background-color: #FF00FF;
+
+  // Green background from 960px width
+  @media screen and (break(medium)) {
+    background-color: #00FF00;
+  }
+}
+
+.Menu {
+  color: #FF00FF;
+
+  // Green color from 960px width and retina display
+  @media screen and (break(medium)) and (density(2x)) {
+    color: #00FF00;
+  }
+}
+
+```
+
 ## How?
 1. Install this tool with `npm install -D help-media-queries`. If you use [Yarn](https://yarnpkg.com/), run `yarn add --dev help-media-queries`
 
@@ -44,39 +70,6 @@ Import media queries functions inside each component `scss` file:
 ```
 
 **By default HMQ is active, so make sure to disable it by setting `$hmq-enable-tooltip` to `false`, or by removing the ```@import``` when your are on production!**
-
-**HMQ** provide also two useful SASS functions that make your media queries easy to write, `break()` and `density()`
-
-Here some examples:
-
-**With break(..)**
-```scss
-.Header {
-  background-color: #FF00FF;
-
-  // Green background from 960px
-  @media screen and (break(medium)) {
-    background-color: #00FF00;
-  }
-}
-
-```
-
-**With break(..) and density(..)**
-```scss
-.Header {
-  background-color: #FF00FF;
-
-  // Green background from 960px width and retina display
-  @media screen and (break(medium)) and (density(2x)) {
-    background-color: #00FF00;
-  }
-}
-
-```
-
-
-
 
 ## Settings
 
