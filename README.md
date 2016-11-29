@@ -56,7 +56,7 @@ Install this tool with `npm install -D help-media-queries`. If you use [Yarn](ht
 @import 'node_modules/help-media-queries/src/tooltip.scss';
 ```
 
-##### Webpack/React
+##### Webpack
 
 Inside your `scss` entry point, import once the tooltip file:
 ```scss
