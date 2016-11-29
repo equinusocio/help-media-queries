@@ -1,3 +1,13 @@
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/equinusocio/help-media-queries/compare/v1.2.0...v2.0.0) (2016-11-29)
+
+
+### Bug Fixes
+
+* Library decomposition to allow single imports ([07e4f58](https://github.com/equinusocio/help-media-queries/commit/07e4f58))
+
+
+
 <a name="1.2.0"></a>
 # [1.2.0](https://github.com/equinusocio/help-media-queries/compare/v1.1.0...v1.2.0) (2016-11-25)
 
@@ -38,6 +48,3 @@
 * clean code ([07597e4](https://github.com/equinusocio/help-media-queries/commit/07597e4))
 * Clean code and improve readability ([f1136c3](https://github.com/equinusocio/help-media-queries/commit/f1136c3))
 * Update comments and add basic functions ([ca11fc0](https://github.com/equinusocio/help-media-queries/commit/ca11fc0))
-
-
-
