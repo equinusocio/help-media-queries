@@ -21,9 +21,6 @@ With this tool you can handle your responsive project without stress. You will b
 ## How?
 1. Install this tool with `npm install -D help-media-queries`. If you use [Yarn](https://yarnpkg.com/), run `yarn add --dev help-media-queries`
 
-2. Then just import the files from `node_modules` inside your scss project, then compile.
-
-
 **Gulp/Grunt**
 
 ```scss
