@@ -32,13 +32,12 @@ With this tool you can handle your responsive project without stress. You will b
 
 **Webpack/React**
 
-1. Inside your scss entry point, import once the tooltip file:
+Inside your `scss` entry point, import once the tooltip file:
 ```scss
 // Import the tooltip flag
 @import '~help-media-queries/src/tooltip.scss
 ```
-
-2. Import media queries functions inside each component scss file:
+Import media queries functions inside each component `scss` file:
 ```scss
 // Import the functions break() and density()
 @import '~help-media-queries/src/helpers.scss
