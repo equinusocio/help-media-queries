@@ -60,12 +60,12 @@ Install this tool with `npm install -D help-media-queries`. If you use [Yarn](ht
 Inside your `scss` entry point, import once the tooltip file:
 ```scss
 // Import the tooltip flag
-@import '~help-media-queries/src/tooltip.scss
+@import '~help-media-queries/src/tooltip.scss';
 ```
 Import media queries functions inside each component `scss` file:
 ```scss
 // Import the functions break() and density()
-@import '~help-media-queries/src/helpers.scss
+@import '~help-media-queries/src/helpers.scss';
 ```
 
 **By default HMQ is active, so make sure to disable it by setting `$hmq-enable-tooltip` to `false`, or by removing the ```@import``` when your are on production!**
