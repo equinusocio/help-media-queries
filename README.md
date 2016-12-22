@@ -8,6 +8,7 @@
 <a href="https://github.com/equinusocio/help-media-queries/issues"><img alt="Issues" src="https://img.shields.io/github/issues/equinusocio/help-media-queries.svg?colorB=80d4cd&style=flat-square"></a>
 <a href="https://github.com/equinusocio/hhelp-media-queries/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/equinusocio/help-media-queries.svg?colorB=44cc11&style=flat-square"></a>
 <a href="https://github.com/equinusocio/hhelp-media-queries/stargazers"><img alt="Usage" src="https://img.shields.io/npm/dt/help-media-queries.svg?style=flat-square&label=downloads"></a>
+<a href="https://www.codacy.com/app/astorino-design/help-media-queries?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=equinusocio/help-media-queries&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/703947b1dda3484aac7b845a911a6f76"/></a>
 
 ## What's "Help Media Queries"?
 
