@@ -69,7 +69,7 @@ Import media queries functions inside each component `scss` file:
 @import '~help-media-queries/src/helpers.scss';
 ```
 
-**By default HMQ is active, so make sure to disable it by setting `$hmq-enable-tooltip` to `false`, or by removing the ```@import``` when your are on production!**
+**By default HMQ is active, so make sure to disable it by set `$hmq-enable-tooltip` to `false` (before of imports), or by removing the tooltip ```@import``` when your are on production!**
 
 ## Settings
 
