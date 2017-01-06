@@ -1,9 +1,9 @@
 /*
   NOTE: Remember to disable the tooltip when you are on production
 */
-$hmq-enable-tooltip: true;
-$hmq-enable-random-color: false;
-$hmq-dark-theme: false;
+$hmq-enable-tooltip: true !default;
+$hmq-enable-random-color: false !default;
+$hmq-dark-theme: false !default;
 
 
 /*

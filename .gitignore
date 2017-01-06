@@ -1,5 +1,4 @@
 /src/*.css
-/demo.html
 
 node_modules/
 bower_components/

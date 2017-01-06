@@ -1,0 +1,17 @@
+$hmq-enable-tooltip: true;
+
+// Import the functions break() and density()
+@import './node_modules/help-media-queries/src/helpers';
+// Import the tooltip flag
+@import './node_modules/help-media-queries/src/tooltip';
+
+// Enable or disable the HMQ tooltip (set false when you are on production!)
+
+html {
+  font-size: 100%;
+  background-color: #9E2231;
+}
+
+body {
+  height: 100vh;
+}
