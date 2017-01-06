@@ -1,10 +1,22 @@
+<a name="2.0.1"></a>
+## [2.0.1](https://github.com/equinusocio/help-media-queries/compare/v2.0.0...v2.0.1) (2017-01-06)
+
+
+### Bug Fixes
+
+* Remove Safari prefix ([741ea9e](https://github.com/equinusocio/help-media-queries/commit/741ea9e))
+* **build:** Fix occasional ascii code error when compile ([551972f](https://github.com/equinusocio/help-media-queries/commit/551972f))
+* set initial configs as default if not already assigned ([b5cf534](https://github.com/equinusocio/help-media-queries/commit/b5cf534))
+
+
+
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/equinusocio/help-media-queries/compare/v1.2.0...v2.0.0) (2016-11-29)
 
 
 ### Bug Fixes
 
-* Library decomposition to allow single imports ([07e4f58](https://github.com/equinusocio/help-media-queries/commit/07e4f58))
+* Library scomposition to allow single imports ([07e4f58](https://github.com/equinusocio/help-media-queries/commit/07e4f58))
 
 
 
