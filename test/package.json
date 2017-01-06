@@ -1,0 +1,14 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "help-mediaqueries demo",
+  "main": "demo.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mattia Astorino",
+  "license": "ISC",
+  "devDependencies": {
+    "help-media-queries": "^2.0.0"
+  }
+}
