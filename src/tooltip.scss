@@ -68,7 +68,7 @@
         $size: nth( nth( $breakpoints, $i ), 2 );
 
         &::after {
-          @media screen and ( $dpi ) {
+          @media screen {
             content: 'Density: #{ $density-value }';
 
             @media ( orientation: portrait ) {
