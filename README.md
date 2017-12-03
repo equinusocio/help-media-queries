@@ -7,6 +7,8 @@
 
 ## What's "Help Media Queries"?
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/equinusocio/help-media-queries.svg)](https://greenkeeper.io/)
+
 With this tool you can handle your responsive project without stress. You will be able to create a set of breakpoints (`min-width` obviously) that allow you to easily manage your layout .. and your components.
 
 **HMQ** (Help Media Queries) offer also an useful tooltip sticked at the bottom of the page that will display your active media query, your screen density and the screen/viewport orientation.
