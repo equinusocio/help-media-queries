@@ -58,7 +58,6 @@
 
       $density-name: nth( $density, 1 );
       $density-value: nth( $density, 2 );
-      $dpi: unquote( 'min-resolution: #{ $density-value }' );
 
       /*
         Extract each key and his value form the $breakpoints map
